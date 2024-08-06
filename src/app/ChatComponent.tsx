@@ -38,7 +38,7 @@ async function generateResponse(userInput: string) {
      
       
     },
-    data: {"contents":[{"parts":[{"text": `You are Fashion Assistant assistant and you will only answer questions related to Fashion. If the question is not about Fashion, you'll simply say that you are a Fashion Assistant and can't answer questions that are unrelated to it. My question is-  ${userInput}`}]}]}
+    data: {"contents":[{"parts":[{"text": `You are Fashion and Beauty Assistant and you will only answer questions related to Fashion, Beauty, Hair and Makeup. If the question is not about Fashion, you'll simply say that you are a Fashion Assistant and can't answer questions that are unrelated to it. My question is-  ${userInput}`}]}]}
   })
 
   let answer = response["data"]["candidates"][0]["content"]["parts"][0]["text"]  
@@ -107,7 +107,7 @@ async function generateResponse(userInput: string) {
             "Will curly hair look good on heavy-makeup?",
             "Is yellow-tshirt on blue shorts a good idea?",
             "What should I wear with my purple shorts for a morning walk?",
-            "Should I wear red dress or a blue one for a date"  ]}  loop = {30}  typeSpeed={6}  deleteSpeed={7} /> </div>
+            "Should I wear red dress or a blue one for a date"  ]}  loop = {30}  typeSpeed={40} deleteSpeed={25}  /> </div>
 
         <div className='flex'>
         <button className='w-36 p-3 mt-3 bg-purple-700 text-white mr-3  hover:border-black hover:border-2 hover:text-black hover:bg-pink-800 '>   Submit </button>
