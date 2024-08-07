@@ -73,7 +73,7 @@ async function generateResponse(userInput: string) {
 
   return (
     <div className='w-screen rounded-b-md flex justify-center h-screen flex-col items-center'>
-      <div className='w-3/5 bg-gradient-to-br from-purple-200 to-orange-200  border-2 border-zinc-200 hover:shadow-2xl rounded'>
+      <div className='w-screen lg:w-3/5  lg:h-1/2 h-screen bg-gradient-to-br from-purple-200 to-orange-200  border-2 border-zinc-200 hover:shadow-2xl rounded'>
       <div className='w-full bg-pink-200 py-6 px-3 font-semibold'> Your Own Personal Fashion Assistant</div>
     <div className='p-4 '>
     <div >
@@ -90,7 +90,7 @@ async function generateResponse(userInput: string) {
 
 
       <form onSubmit={handleSubmit}> 
-          <p> Ask me your fashion queries</p>
+          <p  style={typingTexts} > Ask me your fashion queries</p>
           <textarea 
           className='w-full py-4 px-2 text-black mt-6'
           placeholder= ""
